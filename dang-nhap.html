@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YING DRINK - Đăng nhập</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <h1>YING <span>DRINK</span></h1>
+    <nav class="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="san-pham.html">Sản phẩm</a>
+        <a href="lien-he.html">Liên hệ</a>
+        <a href="gop-y.html">Góp ý</a>
+        <div id="userArea" class="user-area"></div>
+    </nav>
+</header>
+
+<section class="auth-container">
+    <div class="auth-box">
+        <h2>ĐĂNG NHẬP</h2>
+        <p>Chào mừng bạn quay lại YING DRINK</p>
+
+        <form id="loginForm">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" placeholder="Nhập email" required>
+
+            <label for="loginPassword">Mật khẩu</label>
+            <input type="password" id="loginPassword" placeholder="Nhập mật khẩu" required>
+
+            <button type="submit">ĐĂNG NHẬP</button>
+        </form>
+
+        <p class="auth-link">Chưa có tài khoản? <a href="dang-ky.html">Đăng ký ngay</a></p>
+        <p id="loginMessage" class="form-message"></p>
+    </div>
+</section>
+
+<footer><p>© 2026 YING DRINK - Website bán đồ uống</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

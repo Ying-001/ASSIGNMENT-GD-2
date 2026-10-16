@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sản phẩm - YING DRINK</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+
+    <div class="logo">
+        YING<span>DRINK</span>
+    </div>
+
+    <nav class="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="san-pham.html" class="active">Sản phẩm</a>
+        <a href="lien-he.html">Liên hệ</a>
+        <a href="gop-y.html">Góp ý</a>
+
+        <div id="userArea" class="user-area"></div>
+    </nav>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+<main>
+
+    <!-- TIÊU ĐỀ -->
+    <section class="page-title">
+
+        <p class="small-title">YING DRINK</p>
+
+        <h1>MENU ĐỒ UỐNG</h1>
+
+        <p>
+            Khám phá những thức uống thơm ngon và hấp dẫn
+            tại YING DRINK.
+        </p>
+
+    </section>
+
+
+    <!-- ================= TÌM KIẾM ================= -->
+    <section class="product-search-section">
+
+        <form id="productSearchForm" class="product-search">
+
+            <input
+                type="search"
+                id="productSearch"
+                placeholder="Tìm trà sữa, cà phê, trà đào..."
+                autocomplete="off"
+            >
+
+            <button type="submit">
+                🔍 Tìm
+            </button>
+
+        </form>
+
+        <p id="productSearchMessage" class="search-message"></p>
+
+    </section>
+
+
+    <!-- ================= DANH SÁCH SẢN PHẨM ================= -->
+    <section class="products-section">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="small-title">YING MENU</p>
+                <h2>Các sản phẩm</h2>
+            </div>
+
+            <p id="productCount"></p>
+
+        </div>
+
+
+        <div class="products" id="productList">
+
+
+            <!-- SẢN PHẨM 1 -->
+            <article class="product"
+                data-name="Trà sữa truyền thống"
+                data-category="trà sữa">
+
+                <div class="product-image">
+                    🧋
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Trà sữa
+                    </span>
+
+                    <h3>Trà sữa truyền thống</h3>
+
+                    <p>
+                        Trà sữa thơm béo, vị truyền thống dễ uống.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>30.000đ</strong>
+
+                        <button
+                            class="add-to-cart"
+                            data-id="1"
+                            data-name="Trà sữa truyền thống"
+                            data-price="30000">
+                            + Thêm
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SẢN PHẨM 2 -->
+            <article class="product"
+                data-name="Trà sữa matcha"
+                data-category="trà sữa">
+
+                <div class="product-image">
+                    🍵
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Trà sữa
+                    </span>
+
+                    <h3>Trà sữa Matcha</h3>
+
+                    <p>
+                        Matcha thơm nhẹ kết hợp cùng sữa béo.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>35.000đ</strong>
+
+                        <button
+                            class="add-to-cart"
+                            data-id="2"
+                            data-name="Trà sữa Matcha"
+                            data-price="35000">
+                            + Thêm
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SẢN PHẨM 3 -->
+            <article class="product"
+                data-name="Trà sữa socola"
+                data-category="trà sữa">
+
+                <div class="product-image">
+                    🍫
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Trà sữa
+                    </span>
+
+                    <h3>Trà sữa Socola</h3>
+
+                    <p>
+                        Hương socola đậm đà, ngọt ngào và thơm ngon.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>35.000đ</strong>
+
+                        <button
+                            class="add-to-cart"
+                            data-id="3"
+                            data-name="Trà sữa Socola"
+                            data-price="35000">
+                            + Thêm
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SẢN PHẨM 4 -->
+            <article class="product"
+                data-name="Trà đào cam sả"
+                data-category="trà trái cây">
+
+                <div class="product-image">
+                    🍑
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Trà trái cây
+                    </span>
+
+                    <h3>Trà đào cam sả</h3>
+
+                    <p>
+                        Trà đào kết hợp cam và sả thơm mát.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>30.000đ</strong>
+
+                        <button
+                            class="add-to-cart"
+                            data-id="4"
+                            data-name="Trà đào cam sả"
+                            data-price="30000">
+                            + Thêm
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SẢN PHẨM 5 -->
+            <article class="product"
+                data-name="Trà dâu"
+                data-category="trà trái cây">
+
+                <div class="product-image">
+                    🍓
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Trà trái cây
+                    </span>
+
+                    <h3>Trà dâu</h3>
+
+                    <p>
+                        Trà dâu chua ngọt, thơm mát và dễ uống.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>30.000đ</strong>
+
+                        <button
+                            class="add-to-cart"
+                            data-id="5"
+                            data-name="Trà dâu"
+                            data-price="30000">
+                            + Thêm
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SẢN PHẨM 6 -->
+            <article class="product"
+                data-name="Trà chanh"
+                data-category="trà trái cây">
+
+                <div class="product-image">
+                    🍋
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Trà trái cây
+                    </span>
+
+                    <h3>Trà chanh</h3>
+
+                    <p>
+                        Trà chanh thanh mát, phù hợp cho ngày nóng.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>25.000đ</strong>
+
+                        <button
+                            class="add-to-cart"
+                            data-id="6"
+                            data-name="Trà chanh"
+                            data-price="25000">
+                            + Thêm
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SẢN PHẨM 7 -->
+            <article class="product"
+                data-name="Cà phê đen"
+                data-category="cà phê">
+
+                <div class="product-image">
+                    ☕
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Cà phê
+                    </span>
+
+                    <h3>Cà phê đen</h3>
+
+                    <p>
+                        Cà phê đậm đà dành cho người yêu vị truyền thống.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>25.000đ</strong>
+
+                        <button
+                            class="add-to-cart"
+                            data-id="7"
+                            data-name="Cà phê đen"
+                            data-price="25000">
+                            + Thêm
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SẢN PHẨM 8 -->
+            <article class="product"
+                data-name="Cà phê sữa"
+                data-category="cà phê">
+
+                <div class="product-image">
+                    ☕
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Cà phê
+                    </span>
+
+                    <h3>Cà phê sữa</h3>
+
+                    <p>
+                        Cà phê hòa quyện cùng sữa ngọt béo.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>30.000đ</strong>
+
+                        <button
+                            class="add-to-cart"
+                            data-id="8"
+                            data-name="Cà phê sữa"
+                            data-price="30000">
+                            + Thêm
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SẢN PHẨM 9 -->
+            <article class="product"
+                data-name="Bạc xỉu"
+                data-category="cà phê">
+
+                <div class="product-image">
+                    🥛
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Cà phê
+                    </span>
+
+                    <h3>Bạc xỉu</h3>
+
+                    <p>
+                        Vị sữa béo nhẹ kết hợp cùng cà phê thơm.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>30.000đ</strong>
+
+                        <button
+                            class="add-to-cart"
+                            data-id="9"
+                            data-name="Bạc xỉu"
+                            data-price="30000">
+                            + Thêm
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SẢN PHẨM 10 -->
+            <article class="product"
+                data-name="Sinh tố xoài"
+                data-category="sinh tố">
+
+                <div class="product-image">
+                    🥭
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Sinh tố
+                    </span>
+
+                    <h3>Sinh tố xoài</h3>
+
+                    <p>
+                        Xoài tươi xay cùng sữa tạo vị thơm béo.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>35.000đ</strong>
+
+                        <button
+                            class="add-to-cart"
+                            data-id="10"
+                            data-name="Sinh tố xoài"
+                            data-price="35000">
+                            + Thêm
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SẢN PHẨM 11 -->
+            <article class="product"
+                data-name="Sinh tố dâu"
+                data-category="sinh tố">
+
+                <div class="product-image">
+                    🍓
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Sinh tố
+                    </span>
+
+                    <h3>Sinh tố dâu</h3>
+
+                    <p>
+                        Dâu tươi xay mịn, chua ngọt tự nhiên.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>35.000đ</strong>
+
+                        <button
+                            class="add-to-cart"
+                            data-id="11"
+                            data-name="Sinh tố dâu"
+                            data-price="35000">
+                            + Thêm
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SẢN PHẨM 12 -->
+            <article class="product"
+                data-name="Nước cam"
+                data-category="nước ép">
+
+                <div class="product-image">
+                    🍊
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Nước ép
+                    </span>
+
+                    <h3>Nước cam</h3>
+
+                    <p>
+                        Nước cam tươi giàu vitamin và thanh mát.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>30.000đ</strong>
+
+                        <button
+                            class="add-to-cart"
+                            data-id="12"
+                            data-name="Nước cam"
+                            data-price="30000">
+                            + Thêm
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- KHÔNG TÌM THẤY -->
+        <div id="noProduct" class="no-product">
+            Không tìm thấy sản phẩm phù hợp.
+        </div>
+
+    </section>
+
+
+    <!-- ================= GIỎ HÀNG ================= -->
+    <section class="cart-section" id="cart">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="small-title">YOUR ORDER</p>
+                <h2>🛒 Giỏ hàng</h2>
+            </div>
+
+            <span id="cartCount">
+                0 sản phẩm
+            </span>
+
+        </div>
+
+
+        <div class="cart-box">
+
+            <div id="cartItems">
+
+                <div class="empty-cart">
+                    🛒 Giỏ hàng đang trống.
+                </div>
+
+            </div>
+
+
+            <div class="cart-footer">
+
+                <div class="cart-total">
+
+                    <span>Tổng tiền:</span>
+
+                    <strong id="cartTotal">
+                        0đ
+                    </strong>
+
+                </div>
+
+
+                <div class="cart-buttons">
+
+                    <button
+                        id="clearCart"
+                        class="clear-cart">
+                        Xóa giỏ hàng
+                    </button>
+
+                    <button
+                        id="checkoutButton"
+                        class="checkout-button">
+                        Đặt hàng
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div>
+        <strong>YING DRINK</strong>
+        <p>Thức uống ngon - Giá hợp lý - Phục vụ tận tâm.</p>
+    </div>
+
+    <div>
+        <p>© 2026 YING DRINK</p>
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
