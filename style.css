@@ -110,11 +110,9 @@ input {
     padding: 75px 20px 45px;
 
     background:
-        radial-gradient(
-            circle at top,
+        radial-gradient(circle at top,
             #ffe8cf,
-            #fff8ef 65%
-        );
+            #fff8ef 65%);
 }
 
 .small-title {
@@ -220,8 +218,8 @@ input {
     color: #432817;
 }
 
-.section-heading > p,
-.section-heading > span {
+.section-heading>p,
+.section-heading>span {
     color: #8b6d5b;
     font-size: 14px;
 }
@@ -276,11 +274,9 @@ input {
     font-size: 75px;
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             #ffe6cf,
-            #f7c79f
-        );
+            #f7c79f);
 }
 
 
@@ -720,11 +716,11 @@ input {
     display: flex;
     align-items: center;
     background:
-        linear-gradient(90deg, rgba(255,248,239,.98) 0%, rgba(255,248,239,.82) 48%, rgba(255,248,239,.25) 100%),
+        linear-gradient(90deg, rgba(255, 248, 239, .98) 0%, rgba(255, 248, 239, .82) 48%, rgba(255, 248, 239, .25) 100%),
         radial-gradient(circle at 80% 30%, #ffd7ad, #fff8ef 58%);
 }
 
-.banner > div {
+.banner>div {
     max-width: 700px;
 }
 
@@ -748,7 +744,7 @@ input {
     border: 1px solid #e2cbb7;
     border-radius: 50px;
     padding: 6px;
-    box-shadow: 0 10px 30px rgba(91,57,35,.08);
+    box-shadow: 0 10px 30px rgba(91, 57, 35, .08);
     margin-bottom: 14px;
 }
 
@@ -791,35 +787,35 @@ input {
     transform: translateY(-2px);
 }
 
-.banner + .container {
+.banner+.container {
     padding: 60px 0 75px;
 }
 
-.banner + .container > h2 {
+.banner+.container>h2 {
     font-size: 30px;
     color: #432817;
     margin-bottom: 25px;
 }
 
-.banner + .container .products {
+.banner+.container .products {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
 }
 
-.banner + .container .product {
+.banner+.container .product {
     background: #fff;
     border: 1px solid #ead9c7;
     border-radius: 20px;
     padding: 0 20px 22px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(80,48,27,.06);
+    box-shadow: 0 8px 25px rgba(80, 48, 27, .06);
     transition: .25s;
 }
 
-.banner + .container .product:hover {
+.banner+.container .product:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(80,48,27,.12);
+    box-shadow: 0 15px 35px rgba(80, 48, 27, .12);
 }
 
 .product-img {
@@ -832,19 +828,19 @@ input {
     background: linear-gradient(135deg, #ffe6cf, #f7c79f);
 }
 
-.banner + .container .product h3 {
+.banner+.container .product h3 {
     color: #432817;
     font-size: 21px;
     margin-bottom: 6px;
 }
 
-.banner + .container .product p {
+.banner+.container .product p {
     color: #806958;
     font-size: 14px;
     margin-bottom: 10px;
 }
 
-.banner + .container .product strong {
+.banner+.container .product strong {
     color: #b95724;
     font-size: 18px;
 }
@@ -874,15 +870,20 @@ input {
     padding: 55px 0 75px;
 }
 
-.about-box, .about-info, .contact-box, .map, .feedback-form {
+.about-box,
+.about-info,
+.contact-box,
+.map,
+.feedback-form {
     background: #fff;
     border: 1px solid #ead9c7;
     border-radius: 20px;
     padding: 30px;
-    box-shadow: 0 8px 25px rgba(80,48,27,.06);
+    box-shadow: 0 8px 25px rgba(80, 48, 27, .06);
 }
 
-.about h2, .contact h2 {
+.about h2,
+.contact h2 {
     color: #432817;
     margin-bottom: 15px;
 }
@@ -892,7 +893,8 @@ input {
     margin-bottom: 15px;
 }
 
-.about p, .contact p {
+.about p,
+.contact p {
     color: #806958;
     margin-bottom: 12px;
 }
@@ -933,7 +935,7 @@ input {
     border: 1px solid #ead9c7;
     border-radius: 20px;
     padding: 35px;
-    box-shadow: 0 12px 35px rgba(80,48,27,.09);
+    box-shadow: 0 12px 35px rgba(80, 48, 27, .09);
 }
 
 .auth-box h2 {
@@ -942,7 +944,7 @@ input {
     margin-bottom: 5px;
 }
 
-.auth-box > p:first-of-type {
+.auth-box>p:first-of-type {
     color: #806958;
     text-align: center;
     margin-bottom: 25px;
@@ -977,7 +979,7 @@ input {
 .feedback-form input:focus,
 .feedback-form textarea:focus {
     border-color: #c66b32;
-    box-shadow: 0 0 0 3px rgba(198,107,50,.12);
+    box-shadow: 0 0 0 3px rgba(198, 107, 50, .12);
 }
 
 .auth-box button,
@@ -1025,7 +1027,7 @@ input {
 }
 
 /* Footer for simple pages */
-body > footer:not(.footer) {
+body>footer:not(.footer) {
     margin-top: auto;
     padding: 24px 7%;
     text-align: center;
@@ -1033,7 +1035,7 @@ body > footer:not(.footer) {
     color: #f9eee4;
 }
 
-body > footer:not(.footer) p {
+body>footer:not(.footer) p {
     margin: 0;
     color: #d7c3b3;
 }
@@ -1055,7 +1057,7 @@ main {
         min-height: 390px;
     }
 
-    .banner + .container .products,
+    .banner+.container .products,
     .about,
     .contact {
         grid-template-columns: 1fr;
@@ -1108,7 +1110,7 @@ main {
     display: flex;
     align-items: center;
     background:
-        linear-gradient(90deg, rgba(255,248,239,.98) 0%, rgba(255,248,239,.82) 48%, rgba(255,248,239,.25) 100%),
+        linear-gradient(90deg, rgba(255, 248, 239, .98) 0%, rgba(255, 248, 239, .82) 48%, rgba(255, 248, 239, .25) 100%),
         radial-gradient(circle at 80% 30%, #ffd7ad, #fff8ef 58%);
 }
 
@@ -1160,11 +1162,11 @@ main {
 }
 
 /* ---------- KHOẢNG CÁCH CÁC KHỐI SAU HERO ---------- */
-.hero ~ .container {
+.hero~.container {
     padding: 50px 0 30px;
 }
 
-.hero ~ .container > h2 {
+.hero~.container>h2 {
     font-size: 30px;
     color: #432817;
     margin-bottom: 25px;
@@ -1201,14 +1203,14 @@ main {
     border-radius: 20px;
     padding: 28px 15px;
     text-align: center;
-    box-shadow: 0 8px 25px rgba(80,48,27,.06);
+    box-shadow: 0 8px 25px rgba(80, 48, 27, .06);
     transition: .25s;
     cursor: pointer;
 }
 
 .category:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(80,48,27,.12);
+    box-shadow: 0 15px 35px rgba(80, 48, 27, .12);
 }
 
 .category-icon {
@@ -1234,23 +1236,23 @@ main {
 }
 
 /* ---------- SẢN PHẨM NỔI BẬT (chỉ trang chủ) ---------- */
-.hero ~ .container .product {
+.hero~.container .product {
     padding: 0 20px 22px;
 }
 
-.hero ~ .container .product h3 {
+.hero~.container .product h3 {
     color: #432817;
     font-size: 21px;
     margin-bottom: 6px;
 }
 
-.hero ~ .container .product p {
+.hero~.container .product p {
     color: #806958;
     font-size: 14px;
     margin-bottom: 10px;
 }
 
-.hero ~ .container .product strong {
+.hero~.container .product strong {
     color: #b95724;
     font-size: 18px;
 }
@@ -1302,17 +1304,126 @@ footer .copyright {
     .categories {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
     footer .footer-content {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 800px) {
-    .hero ~ .container .products {
+    .hero~.container .products {
         grid-template-columns: 1fr;
     }
+
     .hero {
         padding: 60px 7%;
         min-height: 380px;
+    }
+}
+
+/* ===== HOAN THIEN: ANH SAN PHAM, BAN DO VA KHA NANG TRUY CAP ===== */
+.product-image img,
+.product-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-image {
+    overflow: hidden;
+    padding: 0;
+}
+
+.product-img {
+    overflow: hidden;
+}
+
+.product-image.image-fallback {
+    padding: 0;
+}
+
+.map-frame {
+    width: 100%;
+    min-height: 260px;
+    height: 100%;
+    border: 0;
+    border-radius: 15px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #d98a54;
+    outline-offset: 3px;
+}
+
+.feedback-form input,
+.feedback-form textarea,
+.auth-box input {
+    max-width: 100%;
+}
+
+footer:not(.footer) {
+    padding: 28px 7%;
+    background: #3d281c;
+    color: #f9eee4;
+}
+
+footer:not(.footer) p,
+footer:not(.footer) a {
+    color: #f9eee4;
+}
+
+footer:not(.footer) a:hover {
+    color: #ffc89e;
+}
+
+@media (max-width:700px) {
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .map-frame {
+        min-height: 240px;
+    }
+}
+
+
+/* Bổ sung cho mục sản phẩm nổi bật trên trang chủ */
+.featured-section .products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.featured-section .product-info {
+    padding: 18px 20px 22px;
+}
+
+.featured-section .product-img {
+    height: 210px;
+    margin: 0;
+}
+
+.featured-section .product-img.image-fallback {
+    background: linear-gradient(135deg, #ffe6cf, #f7c79f);
+}
+
+.featured-cta {
+    text-align: center;
+    margin: 28px 0 10px;
+}
+
+@media (max-width: 800px) {
+    .featured-section .products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .featured-section .products {
+        grid-template-columns: 1fr;
     }
 }
